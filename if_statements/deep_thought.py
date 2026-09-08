@@ -1,4 +1,5 @@
 text = input("What is the answer to life, the universe, and everything?")
+
 #removes weird formatting - e.g. uppercases, dashes, spaces, etc
 if "-" in text:
     text = text.replace("-", "")
