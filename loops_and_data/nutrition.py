@@ -21,7 +21,7 @@ fruits = {
         "watermelon": "80",
 }
 food = input("what do you want to eat?")
-key = food
+key = food.lower()
 if key in fruits:
     print(fruits[key])
 else:
