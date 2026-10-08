@@ -16,10 +16,34 @@ class Order:
         tax = 0
         for item in self.receipt:
             tax += item.price * 0.07
+        return tax
+    
+    def calculate_total(self):
+        total = 0
+        for item in self.receipt:
+            total += item.price * 1.07
+        return total
+    
+    def print_receipt(self):
+            print("fun with objects cafe")
+            print("---------------")
+            print(self.__str__())
+            print("---------------")
+            print("Tax:")
+            print("$" + str(self.calculate_taxes()))
+            print("---------------")
+            print("Total:")
+            print("$" + str(self.calculate_total()))
 
     def __str__(self):
+        x = ""
         for item in self.receipt:
-            return(str(item))
+            x += str(item)
+            x += " "
+        return(x)
+            
+    
+
 def main():
    
     menu = [
@@ -31,7 +55,11 @@ def main():
     
     order1 = Order([])
     order1.add_item(menu[1])
-    print(order1)
+    order1.add_item(menu[1])
+    order1.add_item(menu[2])
+    total = order1.calculate_total()
+    print("The total due is $" + str(total))
+    order1.print_receipt()
 
 if __name__ == '__main__':
 	main()
