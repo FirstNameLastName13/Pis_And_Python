@@ -41,24 +41,9 @@ else:
     binary = binary
 
 if binary[0] == "1":
-        red1.on()
-else:
-        red1.off()
-
-if binary[1] == "1":
-        red2.on()
-else:
-        red2.off()
-    
-if binary[2] == "1":
-        red4.on()
-else:
-        red4.off()
-
-if binary[6] == "1":
-        red64.on()
-else:
+        red1.on
         red64.off()
 
+if binary[7] == "1":
 if binary[7] == "1":
   
