@@ -76,15 +76,4 @@ else:
         red64.off()
 
 if binary[7] == "1":
-        red128.on()
-else:
-        red128.off() 
-sleep(5)
-red1.off()
-red2.off()
-red4.off()
-red8.off()
-red16.off()
-red32.off()
-red64.off()
-red128.off()
+  
