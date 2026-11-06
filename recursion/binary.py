@@ -1,3 +1,4 @@
+#importing relavent libraries
 from gpiozero import LED
 from time import sleep
 
