@@ -55,21 +55,6 @@ if binary[2] == "1":
 else:
         red4.off()
 
-if binary[3] == "1":
-        red8.on()
-else:
-        red8.off()
-
-if binary[4] == "1":
-        red16.on()
-else:
-        red16.off()
-
-if binary[5] == "1":
-        red32.on()
-else:
-        red32.off()
-    
 if binary[6] == "1":
         red64.on()
 else:
